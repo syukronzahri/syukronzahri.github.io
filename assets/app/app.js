@@ -33,7 +33,7 @@ document.onreadystatechange = () => {
     profilePhoto = document.getElementById('profile-photo');
     qrCodeArea = document.getElementById('qr-code');
 
-    $(qrCodeArea).html('').qrcode({height: 96, width: 96, text: window.location});
+    $(qrCodeArea).html('').qrcode({height: 96, width: 96, text: window.location.href});
 
     fetchData();
 }
