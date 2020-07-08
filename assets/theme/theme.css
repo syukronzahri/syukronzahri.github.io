@@ -57,4 +57,8 @@
 		page-break-inside: avoid;
 		position: relative;		
 	}
+    #skill-list {
+        padding: 0;
+        margin: 0;
+    }
 }
