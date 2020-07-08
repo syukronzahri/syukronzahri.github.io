@@ -17,7 +17,9 @@ let xhr,
     trainingCertificationContainer,
     educationContainer,
     profilePhoto,
-    qrCodeArea;
+    qrCodeContainer,
+    qrCodeCanvas,
+    qrCodeContainerWidth;
 
 document.onreadystatechange = () => {
     fullName = document.getElementById('full-name');
@@ -31,17 +33,28 @@ document.onreadystatechange = () => {
     trainingCertificationContainer = document.getElementById('training-certification-list');
     educationContainer = document.getElementById('education');
     profilePhoto = document.getElementById('profile-photo');
-    qrCodeArea = document.getElementById('qr-code');
+    qrCodeCanvas = document.getElementById('qr-code'),
+    qrCodeContainer = document.getElementById('qr-code-container');
 
-    $(qrCodeArea).html('').qrcode({height: 96, width: 96, text: window.location.href});
 
+    drawQRCode();
     fetchData();
+}
+
+window.onresize = () => {
+    drawQRCode();
 }
 
 let formatTextToHTML = (inputValue) => {
     let transformValue = inputValue.replace(/\[/g, '<').replace(/\]/g, '>').replace(/\\[n]/g, '<br>');
 
     return transformValue;
+};
+
+let drawQRCode = () => {
+    qrCodeContainerWidth = $(qrCodeContainer).get(0).clientWidth - 16;
+
+    $(qrCodeCanvas).html('').qrcode({height: qrCodeContainerWidth, width: qrCodeContainerWidth, text: window.location.href});
 };
 
 let fetchData = () => {
@@ -136,7 +149,7 @@ let fetchData = () => {
                 let dateFormat = dateDisplayMap[item.displayDateType];
 
                 stringBuilderArray.push(
-                    '<div class="media">' +
+                    '<div class="media education-item">' +
                     '    <div class="media-body">' +
                     '        <div class="row">' +
                     '            <div class="col-sm-8">' +
@@ -166,7 +179,7 @@ let fetchData = () => {
                 item.workDone.forEach((val, idx) => {
                     let workDoneDateFormat = dateDisplayMap[val.displayDateType]
                     workDone.push(
-                        '<div class="media mt-3 media-container">' +
+                        '<div class="media mt-3 project-item">' +
                         '    <img src="assets/img/icons8-project-50.png" class="mr-3 img-project" alt="Project" style="width: 50px">' +
                         '    <div class="media-body">' +
                         '        <div class="row">' +
@@ -197,8 +210,8 @@ let fetchData = () => {
                     '        </div>' +
 
                     '        <p>' + formatTextToHTML(item.description) + '</p>' +
+                    '        <div class="project-container">' + workDone.join('') + '</div>' +
 
-                    workDone.join('') +
                     '    </div>' +
                     '</div>'
                 );

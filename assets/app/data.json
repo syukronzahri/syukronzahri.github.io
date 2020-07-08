@@ -51,7 +51,7 @@
       "value": "syukronzahri.github.io"
     }
   ],
-  "about": "Software developer yang memiliki passion, dengan pengalaman 5 tahun di bidang web app development khususnya industri kesehatan dan rumah sakit. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui proses bisnis rumah sakit secara global, baik front-office maupun back-office. Seorang praktisi teknis yang antusias, pekerja keras, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri pengembangan aplikasi, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan mencari ilmu. Sangat menyukai pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dan mempelajari teknologi baru yang sedang trending seperti Golang, Docker, ReactJS, NoSQL, [i]micro services[/i], dan [i]cloud server[/i].",
+  "about": "Software developer yang memiliki passion, dengan pengalaman 5 tahun di bidang [i]web app development[/i] di industri klinik dan rumah sakit. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui seluk beluk proses bisnis rumah sakit pemerintah yang kompleks, baik front-office maupun back-office. Seorang praktisi teknis yang antusias, pekerja keras, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri pengembangan aplikasi, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan mencari ilmu. Sangat menyukai pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dan mempelajari teknologi baru yang sedang trending seperti Golang, Docker, ReactJS, NoSQL, [i]micro services[/i], dan [i]cloud server[/i].",
   "skills": [
     {
       "name":  "PHP",
@@ -183,12 +183,12 @@
           "description": "Mengembangkan bagian front office bagian Unit Transfusi Darah dan membuat cetakan label untuk labu darah"
         },
         {
-          "title": "Backoffice Keuangan",
+          "title": "Back-office Keuangan",
           "isRangeDate": true,
           "displayDateType": "MonthYear",
           "from": "2017-10-01",
           "to": "2018-03-01",
-          "description": "Project ini migrasi aplikasi keuangan lama menjadi bagian modul di Fatmahost dan juga memindahkan data dari database lama ke dalam database Fatmahost. Selain itu pada modul backoffice keuangan ini dikembangkan fitur-fitur dan alur proses bisnis yang baru. Modul ini terdiri dari: [ul][li]Master data backoffice keuangan[/li][li]Mata anggaran dan kegiatan anggaran[/li][li]Kasbon, kwitansi langsung dan uang muka sementara[/li][li]E-voucher[/li][li]Penerimaan tagihan dari vendor, verifikasi dan tracking tagihan tersebut untuk mengetahui sejauh mana tagihan tersebut diproses[/li][li]Report seperti laporan penyerapan anggaran, tagihan yang belum dan sudah terbayar[/li][li]dan lain-lain[/li][/ul]"
+          "description": "Project ini migrasi aplikasi keuangan lama menjadi bagian modul di Fatmahost dan juga memindahkan data dari database lama ke dalam database Fatmahost. Selain itu pada modul back-office keuangan ini dikembangkan fitur-fitur dan alur proses bisnis yang baru. Modul ini terdiri dari: [ul][li]Master data back-office keuangan[/li][li]Mata anggaran dan kegiatan anggaran[/li][li]Kasbon, kwitansi langsung dan uang muka sementara[/li][li]E-voucher[/li][li]Penerimaan tagihan dari vendor, verifikasi dan tracking tagihan tersebut untuk mengetahui sejauh mana tagihan tersebut diproses[/li][li]Report seperti laporan penyerapan anggaran, tagihan yang belum dan sudah terbayar[/li][li]dan lain-lain[/li][/ul]"
         },
         {
           "title": "Medical Checkup Summary",
@@ -220,9 +220,79 @@
           "displayDateType": "MonthYear",
           "from": "2015-04-01",
           "to": "2017-12-01",
-          "description": "Bersama tim mengembangkan modul backoffice farmasi, yaitu chain supply obat-obatan. Untuk bagian report, beberapa laporan menggunakan Jasper Report Server. Beberapa modul yang saya kembangkan:[ul][li]Perencanaan obat[/li][li]Perkiraan harga obat dari supplier[/li][li]Kontrak pengadaan obat, penerbitan surat SPK, pembelian langsung tanpa kontrak[/li][li]Permintaan delivery order kepada vendor dan penerbitan surat SPB[/li][li]Penerimaan obat, surat berita acara serah terima barang dan tukar faktur dan verifikasi gudang[/li][li]Distribusi obat dari gudang ke depo dan transfer obat antar depo[/li][li]Revisi dan koreksi penerimaan[/li][li]Obat expired, rusak dan retur ke distributor[/li][li]Penjualan obat dan retur obat dari pasien[/li][li]Report-report mutasi obat di farmasi[/li][li]dan lain-lain[/li][/ul]"
+          "description": "Menjadi bagian dari tim yang mengembangkan modul back-office farmasi, yaitu supply chain obat-obatan. Untuk bagian reporting, beberapa laporan menggunakan Jasper Report Server. Beberapa modul yang saya kembangkan bersama tim:[ul][li]Perencanaan obat[/li][li]Perkiraan harga obat dari supplier[/li][li]Kontrak pengadaan obat, penerbitan surat pengadaan kontrak, pembelian langsung tanpa kontrak[/li][li]Permintaan [i]delivery order[/i] kepada vendor dan penerbitan surat permintaan barang[/li][li]Penerimaan obat, penerbitan surat berita acara serah terima barang dan tukar faktur serta verifikasi gudang penerima[/li][li]Distribusi obat dari gudang ke depo dan transfer obat antar depo[/li][li]Koreksi penerimaan barang[/li][li]Pencatatan obat expired, rusak dan retur ke distributor[/li][li]Penjualan obat dan retur obat dari pasien[/li][li]Laporan-laporan mutasi dan transaksi obat di farmasi[/li][li]dan lain-lain[/li][/ul]"
         }
       ]
+    },
+    {
+      "officeName": "Freelance Web App Developer",
+      "location": "Indonesia",
+      "image": "freelancer.jpg",
+      "title": "Self Employed",
+      "description": "Mengembangkan aplikasi dari berbagai project",
+      "displayDateType": "MonthYear",
+      "isRangeDate": true,
+      "from": "2017-01-01",
+      "to": "",
+      "workDone": [
+        {
+          "title": "Sistem Informasi Rumah Sakit SILC Lasik Center",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2018-08-01",
+          "to": "2018-12-01",
+          "description": "Mengembangkan sistem informasi untuk klinik spesialis mata SILC Lasik Center. Sistem informasi ini terdiri dari:[ul][li]Pendaftaran Pasien dan antrian[/li][li]Reservasi Pasien[/li][li]Billing dan saldo awal[/li][li]E-Medical Record (rekam medis)[/li][li]Tarif layanan[/li][li]Katalog obat dan inventori[/li][li]Expense[/li][li]dan lain-lain[/li][/ul]"
+        },
+        {
+          "title": "Sistem Infromasi RSIA Bunda Citra Arafiq",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2017-01-01",
+          "to": "2017-05-01",
+          "description": "Bagian dari tim yang mengembangkan sistem informasi RSIA Bunda Citra Arafiq, yang terdiri dari modul:[ul][li]Back-office (supply chain farmasi, accounting, tarif pelayanan medis, SDM)[/li][li]Front-office (registrasi pasien, kamar rawat inap, e-resep, rekam medis, billing)[/li][/ul]"
+        }
+      ]
+    },
+    {
+      "officeName": "Synergi System Indonesia",
+      "location": "Bali",
+      "image": "icons8-company-64.png",
+      "title": "Software Developer",
+      "description": "Di Synergi System Indonesia, tugas saya adalah sebagai programmer. Saya ditempatkan di Denpasar, Bali untuk project pembuatan sistem informasi RSUP Sanglah",
+      "displayDateType": "MonthYear",
+      "isRangeDate": true,
+      "from": "2014-10-01",
+      "to": "2015-03-01",
+      "workDone": [
+        {
+          "title": "Aplikasi Gudang RSUP Sanglah",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2015-02-01",
+          "to": "2015-03-01",
+          "description": "Mengembangkan aplikasi untuk pencatatan barang yang keluar dari dan masuk ke gudang"
+        },
+        {
+          "title": "Front Office RSUP Sanglah",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2014-10-01",
+          "to": "2015-01-01",
+          "description": "Bagian dari tim yang mengembangkan modul front-office yaitu pendaftaran pasien RSUP Sanglah"
+        }
+      ]
+    },
+    {
+      "officeName": "PT Ericsson Indonesia",
+      "location": "Jakarta Selatan",
+      "image": "eid.jpg",
+      "title": "Support Engineer",
+      "description": "Di PT Ericsson Indonesia, pekerjaan saya adalah sebagai reviewer data-data teknis dari hasil survey BTS on site. Data tersebut saya olah dengan menggunakan script VBA pada Excel untuk dapat menghasilkan output yang dibaca oleh aplikasi lain. Data hasil review tersebut kemudian dikirimkan ke RF engineer untuk diolah selanjutnya.",
+      "displayDateType": "MonthYear",
+      "isRangeDate": true,
+      "from": "2012-06-01",
+      "to": "2012-09-01",
+      "workDone": []
     }
   ],
   "tools": [

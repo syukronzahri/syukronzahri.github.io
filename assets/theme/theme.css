@@ -49,16 +49,33 @@
 		page-break-after: always;
 	}
 	
-	.media-container {
-		position: relative;
+	.project-container {
+        position: relative;
+        page-break-after: always;
 	}
 	
-	.img-project {
-		page-break-inside: avoid;
-		position: relative;		
+	.project-item {
+        page-break-inside: avoid;
+        position: relative;
 	}
     #skill-list {
         padding: 0;
         margin: 0;
+    }
+
+    #education {
+        position: relative;
+        page-break-after: always;
+        display: block;
+    }
+
+    .education-item {
+        page-break-inside: avoid;
+        position: relative;
+        display: block;
+    }
+
+    #contact {
+        margin-left: 20px;
     }
 }
