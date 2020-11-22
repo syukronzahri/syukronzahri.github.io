@@ -64,15 +64,13 @@
     }
 
     #education {
-        position: relative;
+        /* position: relative; */
         page-break-after: always;
-        display: block;
     }
 
     .education-item {
         page-break-inside: avoid;
         position: relative;
-        display: block;
     }
 
     #contact {

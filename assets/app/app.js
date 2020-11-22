@@ -45,19 +45,19 @@ window.onresize = () => {
     drawQRCode();
 }
 
-let formatTextToHTML = (inputValue) => {
+const formatTextToHTML = (inputValue) => {
     let transformValue = inputValue.replace(/\[/g, '<').replace(/\]/g, '>').replace(/\\[n]/g, '<br>');
 
     return transformValue;
 };
 
-let drawQRCode = () => {
+const drawQRCode = () => {
     qrCodeContainerWidth = $(qrCodeContainer).get(0).clientWidth - 16;
 
     $(qrCodeCanvas).html('').qrcode({height: qrCodeContainerWidth, width: qrCodeContainerWidth, text: window.location.href});
 };
 
-let fetchData = () => {
+const fetchData = () => {
     xhr = new XMLHttpRequest();
     xhr.onreadystatechange  = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
