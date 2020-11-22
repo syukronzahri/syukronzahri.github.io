@@ -1,7 +1,7 @@
 {
   "fullName": "Syukron Zahri",
   "title": "Full Stack Developer",
-  "photo": "free-style.jpeg",
+  "photo": "profile-photo.jpg",
   "basicInfo": [
     {
       "key": "dateOfBirth",
@@ -51,7 +51,7 @@
       "value": "syukronzahri.github.io"
     }
   ],
-  "about": "Software developer yang memiliki passion, dengan pengalaman 5 tahun di bidang [i]web app development[/i] di industri klinik dan rumah sakit. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui seluk beluk proses bisnis rumah sakit pemerintah yang kompleks, baik front-office maupun back-office. Seorang praktisi teknis yang antusias, pekerja keras, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri pengembangan aplikasi, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan mencari ilmu. Sangat menyukai pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dan mempelajari teknologi baru yang sedang trending seperti Golang, Docker, ReactJS, NoSQL, [i]micro services[/i], dan [i]cloud server[/i].",
+  "about": "Software developer yang memiliki passion, dengan pengalaman lebih dari 5 tahun di bidang [i]web development[/i] di industri pelayanan medis. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui seluk beluk proses bisnis rumah sakit yang kompleks, baik [i]front-office[/i] maupun [i]back-office[/i]. Seorang praktisi teknis yang antusias, pekerja keras, teliti, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri software development, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan menimba ilmu dari orang lain. Selalu menekankan pada pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dengan mempelajari teknologi yang sedang trending seperti Golang, Docker, Kubernetes, ReactJS, NoSQL, [i]microservices[/i], dan [i]cloud[/i].",
   "skills": [
     {
       "name":  "PHP",
@@ -98,11 +98,15 @@
       "value": 45
     },
     {
-      "name":  "Go Language",
+      "name":  "Golang",
       "value": 40
     },
     {
       "name":  "Zebra Programming Language",
+      "value": 35
+    },
+    {
+      "name":  "Ubuntu Linux",
       "value": 35
     },
     {
@@ -118,7 +122,7 @@
       "value": 15
     },
     {
-      "name":  "Yii Framework",
+      "name":  "ReactJS",
       "value": 15
     }
   ],
@@ -128,12 +132,20 @@
       "location": "Jakarta Selatan",
       "image": "rsf.png",
       "title": "Programmer",
-      "description": "Pekerjaan utama saya di RSUP Fatmawati adalah sebagai pengembang aplikasi dan analis sistem. Namun tidak terbatas pada hal itu saja, terkadang saya mendapat pekerjaan menginstall dan mengkonfigurasi aplikasi di server, mengumpulkan requirement dari user untuk pembuatan aplikasi, membuat mockup aplikasi, merancang database, bekerja dengan bagian akuntansi dalam pembuatan laporan inventori, sosialisasi penggunaan aplikasi kepada user dan pekerjaan lainnya.\nPada posisi ini, saya dan tim mengembangkan sistem informasi rumah sakit yang bernama Fatmahost, sebuah aplikasi monolitik yang terdiri dari banyak modul yang menunjang proses bisnis rumah sakit. Saya terlibat dalam pengembangan back-end dan front-end. Berikut ini adalah project yang saya kembangkan:",
+      "description": "Pekerjaan utama saya di RSUP Fatmawati adalah sebagai software developer dan analis sistem. Terkadang saya mendapat pekerjaan menginstall dan mengkonfigurasi aplikasi di server, mengumpulkan requirement dari user untuk pembuatan aplikasi, membuat mockup aplikasi, merancang database, bekerja dengan bagian akuntansi dalam pembuatan laporan logistik, sosialisasi penggunaan aplikasi kepada user dan pekerjaan lainnya.\nPada posisi ini, saya dan tim mengembangkan sistem informasi rumah sakit yang bernama Fatmahost, sebuah aplikasi monolitik yang terdiri dari banyak modul yang menunjang proses bisnis rumah sakit. Saya terlibat dalam pengembangan back-end dan front-end. Berikut ini adalah project / modul aplikasi yang saya kembangkan:",
       "displayDateType": "MonthYear",
       "isRangeDate": true,
       "from": "2015-04-01",
       "to": "",
       "workDone": [
+        {
+          "title": "Reservasi Tempat Tidur Rawat Inap",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2020-08-01",
+          "to": "",
+          "description": "Modul yang memfasilitasi user untuk membuat reservasi tempat tidur untuk calon pasien rawat inap"
+        },
         {
           "title": "Bed Monitoring",
           "isRangeDate": true,
@@ -298,8 +310,9 @@
   "tools": [
     "Jetbrains: PHPStorm, WebStorm, IntelliJ Idea",
     "Tortoise Git",
+    "GitHub, GitLab",
     "MySQL Workbench",
-    "Notepad++",
+    "Notepad++, Sublime Text",
     "Visual Studio Code",
     "DBeaver",
     "Postman",
