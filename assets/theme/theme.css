@@ -46,7 +46,7 @@
 	
 	.skillset-container {
 		position: relative;
-		page-break-after: always;
+		/* page-break-after: always; */
 	}
 	
 	.project-container {
@@ -57,20 +57,46 @@
 	.project-item {
         page-break-inside: avoid;
         position: relative;
+        display: flex;
 	}
     #skill-list {
         padding: 0;
         margin: 0;
+        page-break-after: always;
+    }
+
+    #training-certification-list {
+        page-break-inside: avoid;
+        position: relative;
+        display: block;
+    }
+
+    img.workplace {
+        page-break-inside: avoid;
+        display: inline-block;
     }
 
     #education {
-        /* position: relative; */
-        page-break-after: always;
+        position: relative;
+        page-break-after: auto;
+        page-break-before: auto;
+        display: block;
     }
 
     .education-item {
         page-break-inside: avoid;
+        page-break-before: auto;
+        page-break-after: auto;
         position: relative;
+        display: block;
+    }
+
+    .education-item-description {
+        position: relative;
+        display: block;
+        page-break-inside: avoid;
+        page-break-before: auto;
+        page-break-after: auto;
     }
 
     #contact {

@@ -154,7 +154,7 @@ const fetchData = () => {
                     '        <div class="row">' +
                     '            <div class="col-sm-8">' +
                     '                <h5 class="mt-0">' + item.title + '</h5>' +
-                    '                <p>' + formatTextToHTML(item.description) + '</p>' +
+                    '                <p class="education-item-description">' + formatTextToHTML(item.description) + '</p>' +
                     '            </div>' +
                     '            <div class="col-sm-4">' +
                     '                <p class="lead text-right">' + item.from.utility().convertDatetime(dateFormat) + (item.isRangeDate ? (item.to.length ? (' - ' + item.to.toString().utility().convertDatetime(dateFormat)) : ' - Sekarang') : '') + '</p>' +
