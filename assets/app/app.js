@@ -45,19 +45,19 @@ window.onresize = () => {
     drawQRCode();
 }
 
-let formatTextToHTML = (inputValue) => {
+const formatTextToHTML = (inputValue) => {
     let transformValue = inputValue.replace(/\[/g, '<').replace(/\]/g, '>').replace(/\\[n]/g, '<br>');
 
     return transformValue;
 };
 
-let drawQRCode = () => {
+const drawQRCode = () => {
     qrCodeContainerWidth = $(qrCodeContainer).get(0).clientWidth - 16;
 
     $(qrCodeCanvas).html('').qrcode({height: qrCodeContainerWidth, width: qrCodeContainerWidth, text: window.location.href});
 };
 
-let fetchData = () => {
+const fetchData = () => {
     xhr = new XMLHttpRequest();
     xhr.onreadystatechange  = () => {
         if (xhr.readyState === 4 && xhr.status === 200) {
@@ -154,7 +154,7 @@ let fetchData = () => {
                     '        <div class="row">' +
                     '            <div class="col-sm-8">' +
                     '                <h5 class="mt-0">' + item.title + '</h5>' +
-                    '                <p>' + formatTextToHTML(item.description) + '</p>' +
+                    '                <p class="education-item-description">' + formatTextToHTML(item.description) + '</p>' +
                     '            </div>' +
                     '            <div class="col-sm-4">' +
                     '                <p class="lead text-right">' + item.from.utility().convertDatetime(dateFormat) + (item.isRangeDate ? (item.to.length ? (' - ' + item.to.toString().utility().convertDatetime(dateFormat)) : ' - Sekarang') : '') + '</p>' +
