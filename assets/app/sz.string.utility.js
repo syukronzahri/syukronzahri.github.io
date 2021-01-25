@@ -2,7 +2,7 @@
  * String Utility
  * A small tool that can convert string data
  * @author Syukron Zahri
- * @version 1.0.1
+ * @version 1.0.2
  */
 String.prototype.utility = function () {
     let stringData = this;
@@ -20,54 +20,54 @@ String.prototype.utility = function () {
                 second: 0
             };
 
-            let toUpperCaseFirst = function (inputString) {
+            const toUpperCaseFirst = inputString => {
                 return inputString.charAt(0).toUpperCase() + inputString.slice(1);
             };
 
-            let charMap = {
-                Y: ['year', function (input) {
+            const charMap = {
+                Y: ['year', input => {
                     return input.toString();
                 }],
-                m: ['month', function (input) {
+                m: ['month', input => {
                     return input.toString().utility().leftPad('0', 2);
                 }],
-                n: ['month', function (input) {
+                n: ['month', input => {
                     return input.toString();
                 }],
-                F: ['month', function (input) {
+                F: ['month', input => {
                     return ''.utility().monthName(input - 1);
                 }],
-                M: ['month', function (input) {
+                M: ['month', input => {
                     return ''.utility().monthName(input - 1).substr(0, 3);
                 }],
-                d: ['day', function (input) {
+                d: ['day', input => {
                     return input.toString().utility().leftPad('0', 2);
                 }],
-                j: ['day', function (input) {
+                j: ['day', input => {
                     return input.toString();
                 }],
-                H: ['hour', function (input) {
+                H: ['hour', input => {
                     return input.toString().utility().leftPad('0', 2);
                 }],
-                i: ['minute', function (input) {
+                i: ['minute', input => {
                     return input.toString().utility().leftPad('0', 2);
                 }],
-                s: ['second', function (input) {
+                s: ['second', input => {
                     return input.toString().utility().leftPad('0', 2);
                 }],
             };
 
             // format [format character, regex, function to convert the source to variable]
             let format = {
-                userDate: ['d-m-Y', /^\d{2}-\d{2}-\d{4}$/, function(input){
-                    let tempDate = input.split('-');
+                userDate: ['d-m-Y', /^\d{2}-\d{2}-\d{4}$/, input => {
+                    const tempDate = input.split('-');
                     originalDate.day = Number.parseInt(tempDate[0]);
                     originalDate.month = Number.parseInt(tempDate[1]);
                     originalDate.year = Number.parseInt(tempDate[2]);
                     return originalDate;
                 }],
-                userLongMonthYear: ['F Y', /^[a-zA-Z]{3,} \d{4}$/, function (input) {
-                    let tempDate = input.split(' ');
+                userLongMonthYear: ['F Y', /^[a-zA-Z]{3,} \d{4}$/, input => {
+                    const tempDate = input.split(' ');
                     let monthIndex = 0;
 
                     let monthName = ''.utility().monthName();
@@ -83,7 +83,7 @@ String.prototype.utility = function () {
                     originalDate.year = Number.parseInt(tempDate[1]);
                     return originalDate;
                 }],
-                year: ['Y', /^\d{4}$/, function (input) {
+                year: ['Y', /^\d{4}$/, input => {
                     let today = new Date();
 
                     originalDate.day = today.getDay();
@@ -91,7 +91,7 @@ String.prototype.utility = function () {
                     originalDate.year = Number.parseInt(input);
                     return originalDate;
                 }],
-                userDateLongMonthFull: ['d F Y', /^\d{2} [a-zA-Z]{3,} \d{4}$/, function (input) {
+                userDateLongMonthFull: ['d F Y', /^\d{2} [a-zA-Z]{3,} \d{4}$/, input => {
                     let tempDate = input.split(' ');
                     originalDate.day = Number.parseInt(tempDate[0]);
                     let monthIndex = 0;
@@ -108,7 +108,7 @@ String.prototype.utility = function () {
                     originalDate.year = Number.parseInt(tempDate[2]);
                     return originalDate;
                 }],
-                userDateLongMonthPartial: ['d M Y', /^\d{2} [a-zA-Z]{3} \d{4}$/, function (input) {
+                userDateLongMonthPartial: ['d M Y', /^\d{2} [a-zA-Z]{3} \d{4}$/, input => {
                     let tempDate = input.split(' ');
                     originalDate.day = Number.parseInt(tempDate[0]);
                     let monthIndex = 0;
@@ -125,9 +125,9 @@ String.prototype.utility = function () {
                     originalDate.year = Number.parseInt(tempDate[2]);
                     return originalDate;
                 }],
-                userDateTimeLongMonthFull: ['d F Y H:i:s', /^\d{2} [a-zA-Z]{3,} \d{4} \d{2}:\d{2}:\d{2}$/, function (input) {
-                    let tempDate = input.split(' ');
-                    let timePart = timePart[3].split(':');
+                userDateTimeLongMonthFull: ['d F Y H:i:s', /^\d{2} [a-zA-Z]{3,} \d{4} \d{2}:\d{2}:\d{2}$/, input => {
+                    const tempDate = input.split(' ');
+                    const timePart = timePart[3].split(':');
                     originalDate.day = Number.parseInt(tempDate[0]);
                     let monthIndex = 0;
                     let monthName = ''.utility().monthName();
@@ -145,7 +145,7 @@ String.prototype.utility = function () {
                     originalDate.second = timePart[2];
                     return originalDate;
                 }],
-                userDateTimeLongMonthPartial: ['d M Y H:i:s', /^\d{2} [a-zA-Z]{3} \d{4} \d{2}:\d{2}:\d{2}$/, function (input) {
+                userDateTimeLongMonthPartial: ['d M Y H:i:s', /^\d{2} [a-zA-Z]{3} \d{4} \d{2}:\d{2}:\d{2}$/, input => {
                     let tempDate = input.split(' ');
                     let timePart = timePart[3].split(':');
                     originalDate.day = Number.parseInt(tempDate[0]);
@@ -165,7 +165,7 @@ String.prototype.utility = function () {
                     originalDate.second = timePart[2];
                     return originalDate;
                 }],
-                userDateTimeLong: ['d-m-Y H:i:s', /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}:\d{2}$/, function(input){
+                userDateTimeLong: ['d-m-Y H:i:s', /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}:\d{2}$/, input => {
                     let tempDate = input.split(' ');
                     let dayPart = tempDate[0].split('-');
                     let timePart = tempDate[1].split(':');
@@ -177,7 +177,7 @@ String.prototype.utility = function () {
                     originalDate.second = Number.parseInt(timePart[2]);
                     return originalDate;
                 }],
-                userDateTimePartial: ['d-m-Y H:i', /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}$/, function(input){
+                userDateTimePartial: ['d-m-Y H:i', /^\d{2}-\d{2}-\d{4} \d{2}:\d{2}$/, input => {
                     let tempDate = input.split(' ');
                     let dayPart = tempDate[0].split('-');
                     let timePart = tempDate[1].split(':');
@@ -195,7 +195,7 @@ String.prototype.utility = function () {
                     originalDate.year = Number.parseInt(tempDate[0]);
                     return originalDate;
                 }],
-                systemDateTime: ['Y-m-d H:i:s', /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/, function(input){
+                systemDateTime: ['Y-m-d H:i:s', /^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/, input => {
                     let tempDate = input.split(' ');
                     let dayPart = tempDate[0].split('-');
                     let timePart = tempDate[1].split(':');
@@ -207,7 +207,7 @@ String.prototype.utility = function () {
                     originalDate.second = Number.parseInt(timePart[2]);
                     return originalDate;
                 }],
-                time: ['H:i:s', /^\d{2}:\d{2}:\d{2}$/, function(input){
+                time: ['H:i:s', /^\d{2}:\d{2}:\d{2}$/, input => {
                     let tempDate = input;
                     let timePart = tempDate.split(':');
                     originalDate.hour = Number.parseInt(timePart[0]);
@@ -219,7 +219,7 @@ String.prototype.utility = function () {
 
             let fromFormat;
 
-            if (typeof from == 'undefined') {
+            if (from === undefined) {
                 for (let k in format) {
                     if (inputDateString.match(format[k][1])) {
                         fromFormat = k;
@@ -264,7 +264,7 @@ String.prototype.utility = function () {
             systemDateTime: 'systemDateTime',
             time: 'time',
         },
-        getTerbilang: function (options) {
+        getTerbilang: options => {
             let inputNumber = Number.parseInt(stringData),
                 isCurrency = false,
                 commaText = ' Koma ',
@@ -312,7 +312,7 @@ String.prototype.utility = function () {
                 }
             }
 
-            function getBilanganFromChar(x) {
+            const getBilanganFromChar = x => {
                 let trailingNumbers = '';
 
                 if (x.length > 1) {
@@ -322,7 +322,7 @@ String.prototype.utility = function () {
                 return (getBilangan(x.charAt(0)) + ' ' + trailingNumbers).replace(/\s+/, ' ');
             }
 
-            function getRecursiveTerbilangInteger(x) {
+            const getRecursiveTerbilangInteger = x => {
                 x = Math.abs(x);
                 let retVal = '';
 
@@ -351,7 +351,7 @@ String.prototype.utility = function () {
                 return retVal.replace(/\s+/, ' ').trim();
             }
 
-            function getRecursiveTerbilangDecimal(x) {
+            const getRecursiveTerbilangDecimal = x => {
                 let decimal = x,
                     length = decimal.length,
                     decimalBuilder = '';
@@ -378,7 +378,7 @@ String.prototype.utility = function () {
                 return getRecursiveTerbilangInteger(Number.parseInt(wholePart)) + (isCurrency ? currencyText : '') ;
             }
         },
-        numberFormat: function (decimalLength, thousandLength, thousandSeparatorSymbol, decimalSymbol) {
+        numberFormat: (decimalLength, thousandLength, thousandSeparatorSymbol, decimalSymbol) => {
             let numberData = (stringData.indexOf('.') >= 0) ? Number.parseFloat(stringData) : Number.parseInt(stringData);
 
             let re = '\\d(?=(\\d{' + (thousandLength || 3) + '})+' + (decimalLength > 0 ? '\\D' : '$') + ')',
@@ -386,16 +386,16 @@ String.prototype.utility = function () {
 
             return (decimalSymbol ? num.replace('.', decimalSymbol) : num).replace(new RegExp(re, 'g'), '$&' + (thousandSeparatorSymbol || ','));
         },
-        leftPad: function (char, length) {
+        leftPad: (char, length) => {
             return char.repeat(Math.max(0, length - stringData.length)) + stringData;
         },
-        rightPad: function (char, length) {
+        rightPad: (char, length) => {
             return stringData + char.repeat(Math.max(0, length - stringData.length));
         },
-        removeBackSlashQuote: function () {
+        removeBackSlashQuote: () => {
             return stringData.replace(/\\\'/g, "'");
         },
-        monthName: function (number) {
+        monthName: number => {
             let month = [
                 'Januari',
                 'Februari',
@@ -417,28 +417,28 @@ String.prototype.utility = function () {
                 return month[number];
             }
         },
-        isNullDate: function () {
+        isNullDate: () => {
             if (stringData === '0000-00-00') {
                 return true;
             }
         },
-        getTodayDate: function () {
+        getTodayDate: type => {
             let todayDate = new Date();
             return todayDate.getFullYear().toString() + '-' + todayDate.getMonth().toString().utility().leftPad('0', 2) + '-' + todayDate.getDate().toString().utility().leftPad('0', 2);
         },
-        trimLeft: function(charlist) {
-            if (charlist === undefined)
-                charlist = "\\s";
+        trimLeft: character => {
+            if (character === undefined)
+                character = "\\s";
 
-            return stringData.replace(new RegExp("^[" + charlist + "]+"), "");
+            return stringData.replace(new RegExp("^[" + character + "]+"), "");
         },
-        trimRight: function(charlist) {
-            if (charlist === undefined)
-                charlist = "\\s";
+        trimRight: character => {
+            if (character === undefined)
+                character = "\\s";
 
-            return stringData.replace(new RegExp("[" + charlist + "]+$"), "");
+            return stringData.replace(new RegExp("[" + character + "]+$"), "");
         },
-        trim: function(charlist) {
+        trim: charlist => {
             return stringData.trimLeft(charlist).trimRight(charlist);
         },
     };
