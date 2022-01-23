@@ -59,6 +59,11 @@
         position: relative;
         display: flex;
 	}
+	.img-project {
+        page-break-inside: avoid;
+        position: relative;
+        display: flex;
+	}
     #skill-list {
         padding: 0;
         margin: 0;

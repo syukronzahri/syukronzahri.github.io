@@ -20,8 +20,8 @@
     },
     {
       "key": "address",
-      "name": "Domisili",
-      "value": "Tegal Parang, Mampang Prapatan, Jakarta Selatan"
+      "name": "Alamat",
+      "value": "Pamulang, Tangerang Selatan, Banten"
     }
   ],
   "contact": [
@@ -51,7 +51,7 @@
       "value": "syukronzahri.github.io"
     }
   ],
-  "about": "Software developer yang memiliki passion, dengan pengalaman lebih dari 5 tahun di bidang [i]web development[/i] di industri pelayanan medis. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui seluk beluk proses bisnis rumah sakit yang kompleks, baik [i]front-office[/i] maupun [i]back-office[/i]. Seorang praktisi teknis yang antusias, pekerja keras, teliti, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri software development, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan menimba ilmu dari orang lain. Selalu menekankan pada pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dengan mempelajari teknologi yang sedang trending seperti Golang, Docker, Kubernetes, ReactJS, NoSQL, [i]microservices[/i], dan [i]cloud[/i].",
+  "about": "Software developer yang memiliki passion, dengan pengalaman hampir 7 tahun di bidang [i]web development[/i] di industri pelayanan medis. Memiliki pengalaman mengembangkan aplikasi rumah sakit dengan jumlah modul yang besar dan mengetahui seluk beluk proses bisnis rumah sakit yang kompleks, baik [i]front-office[/i] maupun [i]back-office[/i]. Seorang praktisi teknis yang antusias, pekerja keras, teliti, suka mempelajari hal baru and berusaha mengikuti teknik dan desain yang bagus di dalam industri software development, suka mencari solusi yang lebih bagus dan efisien, suka berbagi ilmu dan menimba ilmu dari orang lain. Selalu menekankan pada pekerjaan yang terstruktur dengan rapi dan bersih. Saat ini sedang mencari peluang baru dan sedang mempelajari teknologi yang sedang trending seperti Golang, Docker, Kubernetes, ReactJS, NoSQL, [i]microservices[/i], dan [i]cloud[/i].",
   "skills": [
     {
       "name":  "PHP",
@@ -128,6 +128,75 @@
   ],
   "experiences": [
     {
+      "officeName": "Rumah Sakit Umum Daerah Pasar Minggu",
+      "location": "Jakarta Selatan",
+      "image": "rsudpm.png",
+      "title": "Programmer",
+      "description": "Pekerjaan utama saya di RSUD Pasar Minggu adalah sebagai web based developer. Pada posisi ini, saya dan tim mengembangkan dan me-maintain sistem informasi rumah sakit berbasis web bernama CLO (Clinic Online), sebuah aplikasi yang terdiri dari banyak modul yang menunjang proses bisnis rumah sakit. Saya terlibat dalam pengembangan back-end dan front-end. Berikut ini adalah project / modul aplikasi yang saya kembangkan:",
+      "displayDateType": "MonthYear",
+      "isRangeDate": true,
+      "from": "2021-03-01",
+      "to": "",
+      "workDone": [
+        {
+          "title": "E-Pasien",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-12-01",
+          "to": "",
+          "description": "E-Pasien merupakan aplikasi all-in-one untuk pasien yang dapat memenuhi kebutuhan pasien seperti registrasi poliklinik rawat jalan, registrasi telemedicine, registrasi MCU, pengecekan jadwal kontrol, menampilkan struk reservasi, melihat history kunjungan, hasil laboratorium dan radiologi. E-Pasien ini mempunyai sistem pembayaran yang terkoneksi dengan payment gateway"
+        },
+        {
+          "title": "Pendaftaran Poliklinik Online",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-09-01",
+          "to": "2021-11-01",
+          "description": "Mengembangkan sistem reservasi poliklinik online sehingga pasien dapat registrasi dimanapun tanpa harus antri di anjungan mandiri"
+        },
+        {
+          "title": "Pendaftaran Vaksinasi Online",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-05-01",
+          "to": "2021-07-01",
+          "description": "Merupakan bagian dari tim yang mengembangkan reservasi online vaksinasi"
+        },
+        {
+          "title": "Integrated Clinical Pathway",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-06-01",
+          "to": "",
+          "description": "Sebuah modul pada EMR rawat inap yang berfungsi untuk memberikan gambaran besar aktivitas medis apa saja yang sudah diberikan dan belum diberikan kepada pasien"
+        },
+        {
+          "title": "Push Notification Whatsapp Hasil Lab",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-04-01",
+          "to": "2021-05-01",
+          "description": "Mengembangkan modul push notification WhatsApp yang dapat mengimrimkan hasil lab dan PCR kepada pasien (bridging dengan API pihak ketiga). Selain itu, hasil lab dan PCR tersebut dapat diverifikasi (dengan scan QR Code) bahwa hasil PCR tersebut valid dan benar diterbitkan oleh RSUD Pasar Minggu"
+        },
+        {
+          "title": "API SIMRS",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-03-01",
+          "to": "",
+          "description": "Mengembangkan API (web service) SIMRS untuk dikonsumsi oleh aplikasi eksternal seperti E-Comment, Pendaftaran Online dan E-Pasien"
+        },
+        {
+          "title": "E-Comment",
+          "isRangeDate": true,
+          "displayDateType": "MonthYear",
+          "from": "2021-03-01",
+          "to": "2021-04-01",
+          "description": "Aplikasi komunikasi 2 arah (chat) antara pasien atau keluarga pasien dan bagian medis (perawat). Aplikasi ini sangat membantu keluarga pasien agar dapat berkomunikasi dengan tim medis terutama untuk pasien isolasi"
+        }
+      ]
+    },
+    {
       "officeName": "Rumah Sakit Umum Pusat Fatmawati",
       "location": "Jakarta Selatan",
       "image": "rsf.png",
@@ -136,7 +205,7 @@
       "displayDateType": "MonthYear",
       "isRangeDate": true,
       "from": "2015-04-01",
-      "to": "",
+      "to": "2021-02-28",
       "workDone": [
         {
           "title": "Reservasi Tempat Tidur Rawat Inap",
