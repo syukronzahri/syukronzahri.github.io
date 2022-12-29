@@ -74,6 +74,10 @@
       "value": 70
     },
     {
+      "name":  "Jasper Report",
+      "value": 70
+    },
+    {
       "name":  "MySQL / MariaDB",
       "value": 65
     },
@@ -86,15 +90,15 @@
       "value": 60
     },
     {
+      "name":  "Oracle PL/SQL",
+      "value": 50
+    },
+    {
       "name":  "Git",
       "value": 50
     },
     {
       "name":  "HTML5 Canvas",
-      "value": 45
-    },
-    {
-      "name":  "Jasper Report",
       "value": 45
     },
     {
@@ -138,6 +142,30 @@
       "from": "2021-03-01",
       "to": "",
       "workDone": [
+        {
+          "title": "Bridging BPJS Vclaim &amp; Antrol",
+          "isRangeDate": false,
+          "displayDateType": "Year",
+          "from": "2022-01-01",
+          "to": "2022-11-30",
+          "description": "Bridging VClaim BPJS dan Antrian Online"
+        },
+        {
+          "title": "API Mobile JKN",
+          "isRangeDate": false,
+          "displayDateType": "Year",
+          "from": "2022-04-01",
+          "to": "2022-06-30",
+          "description": "API yang diakses oleh aplikasi Mobile JKN untuk kebutuhan pendaftaran dan antrian pasien"
+        },
+        {
+          "title": "API Jaksehat",
+          "isRangeDate": false,
+          "displayDateType": "Year",
+          "from": "2022-04-01",
+          "to": "2022-06-30",
+          "description": "API yang diakses oleh aplikasi Jaksehat untuk kebutuhan pendaftaran dan antrian pasien"
+        },
         {
           "title": "E-Pasien",
           "isRangeDate": true,
